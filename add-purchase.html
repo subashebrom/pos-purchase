@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="css/add-purchase.css">
+    <title>Add Purchase</title>
+</head>
+
+<body>
+    <!-- === PARENT SECTION === -->
+    <div class="sh-parent-section">
+        <!-- === CHILD SECTION === -->
+        <div class="sh-child-section">
+            <!-- === TOP MENU ITEMS === -->
+            <div class="sh-top-menu-items">
+                <ul>
+                    <li class="sh-menu-items"><a href="add-requisition.html">Add Requisition</a></li>
+                    <li class="sh-menu-items"><a href="manage-requisition.html">Manage Requisition</a></li>
+                    <li class="sh-active-item"><a href="add-purchase.html">Add Purchase</a></li>
+                    <li class="sh-menu-items"><a href="manage-purchase.html">Manage Purchase</a></li>
+                    <li class="sh-menu-items"><a href="manage-received.html">Manage Received</a></li>
+                    <li class="sh-menu-items"><a href="manage-payment.html">Manage Payment</a></li>
+                </ul>
+            </div>
+            <!-- === REQUISIION LIST SECTION === -->
+            <div class="sh-draft-sale-section">
+                <div class="sh-draft-sale-container">
+                    <!-- === DRAFT SALE TOP ITEMV === -->
+                    <div class="sh-requisition-top-item">
+                        <p>Add Purchase (Receive)</p>
+                        <div class="sh-filter">
+                            <a href="#">Manage Purchase</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- === CUSTMER SECTION === -->
+                    <div class="sh-customer-section">
+                        <!-- === CUSTOMER DETAILES === -->
+                        <div class="sh-suctomer-details">
+                            <div class="sh-supplier-name">
+                                <p>Supplier Name</p>
+                                <input type="text" placeholder="Select Supplier Name" value="" name="" id="">
+                            </div>
+                            <div class="sh-supplier-name">
+                                <p>Chalan No</p>
+                                <input type="text" placeholder="Chanal No" value="" name="" id="">
+                            </div>
+                            <div class="sh-supplier-name">
+                                <p>Purchase Date</p>
+                                <input type="text" placeholder="" value="02/16/2025" name="" id="">
+                            </div>
+                        </div>
+                        <!-- === LIST === -->
+                        <div class="sh-list-container">
+                            <div class="sh-list">
+                                <input type="radio" value="list" name="regularpurchase">
+                                <p>Regular Purchase</p>
+                            </div>
+                            <div class="sh-list">
+                                <input type="radio" value="list" name="regularpurchase">
+                                <p>Draft Sale</p>
+                            </div>
+                        </div>
+                        <!-- === COMMENT BOX === -->
+                        <div class="comment-box">
+                            <textarea placeholder="Remarks" name="" id=""></textarea>
+                        </div>
+                        <!-- === EVERYTHING SEARCH BOX === -->
+                        <div class="everyThing-search-box">
+                            <input type="search" placeholder="Enter Product Name, Product Model or Bar Code for Scan"
+                                name="" id="">
+                        </div>
+                        <!-- === PRODUCT ALL DETAILS === -->
+                        <div class="sh-produt-all-details-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product Name</th>
+                                        <th>Stock</th>
+                                        <th>Barcode</th>
+                                        <th>Qty.</th>
+                                        <th>Unit Rate</th>
+                                        <th>Total Rate</th>
+                                        <th>Sales Rate</th>
+                                        <th>Dis%</th>
+                                        <th>VAT%</th>
+                                        <th>Total</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="sh-product-search-box"><input type="text"
+                                                    placeholder="Product Name" name="" id=""></div>
+                                        </td>
+                                        <td class="sh-total-contaier">
+                                            <input type="number" placeholder="" value="0.00" name="total" id="">
+                                        </td>
+                                        <td class="sh-av-box"><input type="number" value="" name="barcode" id=""></td>
+                                        <td class="sh-av-box"><input type="number" value="1" name="qty" id=""></td>
+                                        <td class="sh-qty-number-input">
+                                            <input type="number" placeholder="" value="0.00" name="rate" id="">
+                                        </td>
+                                        <td class="sh-rate-input-container">
+                                            <input type="number" placeholder="" value="0.00" name="salesrate" id="">
+                                        </td>
+                                        <td>
+                                            <div class="sh-discount-container">
+                                                <div class="sh-discount-left-container">
+                                                    <input type="number" placeholder="" value="0.00" name="dis" id="">
+                                                </div>
+                                                <div class="sh-discount-right-container">
+                                                    <input type="number" placeholder="" value="0.00" name="dis" id="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="sh-vatbox-container">
+                                                <div class="sh-vat-left-container">
+                                                    <input type="number" placeholder="" value="0.0" name="vat" id="">
+                                                </div>
+                                                <div class="sh-vat-right-container">
+                                                    <input type="number" placeholder="" value="0.00" name="vat" id="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="sh-vatbox-container">
+                                                <div class="sh-vat-left-container">
+                                                    <input type="number" placeholder="" value="0.0" name="vat" id="">
+                                                </div>
+                                                <div class="sh-vat-right-container">
+                                                    <input type="number" placeholder="" value="0.00" name="vat" id="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="sh-total-contaier">
+                                            <input type="number" placeholder="" value="0.00" name="total" id="">
+                                        </td>
+                                        <td class="sh-delet-icon"><a href="#">
+                                                <a href="#">
+                                                    <i class="fa-solid fa-circle-xmark"></i>
+                                                </a>
+                                            </a></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="10">
+                                            <div class="sh-additional">
+                                                <a href="#"><i class="fa-solid fa-circle-plus"></i>Add Additional
+                                                    Expenses</a>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="sh-plus-icon-two">
+                                                <a href="#"><i class="fa-solid fa-plus"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="9">
+                                            <p>Pay Amount:</p>
+                                        </th>
+                                        <td class="sh-total-contaier">
+                                            <input type="number" placeholder="" value="0.00" name="total" id="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="9">
+                                            <p>Change Amount:</p>
+                                        </th>
+                                        <td class="sh-total-contaier">
+                                            <input type="number" placeholder="" value="0.00" name="total" id="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === FOOTER === -->
+    <div class="sh-footer-section">
+        <div class="footer-items">
+            <div class="sh-footer-total-container">
+                <p>Total</p>
+                <input type="number" value="0.00" name="" id="">
+            </div>
+            <div class="sh-footer-total-container">
+                <p>Product Discount</p>
+                <input type="number" value="0.00" name="" id="">
+            </div>
+            <div class="sh-footer-total-container">
+                <p>Total VAT</p>
+                <input type="number" value="0.00" name="" id="">
+            </div>
+            <div class="sh-footer-total-container">
+                <p>Previous Due</p>
+                <input type="number" value="0.00" name="" id="">
+            </div>
+            <div class="sh-footer-total-container">
+                <p>Net Total</p>
+                <input type="number" value="0.00" name="" id="">
+            </div>
+            <div class="sh-footer-total-container">
+                <p>Current Due</p>
+                <input type="number" value="0.00" name="" id="">
+            </div>
+        </div>
+        <!-- === FOOTER BUTTONS === -->
+         <div class="sh-footer-buttona">
+            <a href="#">Payment</a>
+            <a href="#">Submit</a>
+         </div>
+    </div>
+
+    <!-- === FONT AWSOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

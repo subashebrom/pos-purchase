@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="css/manage-purchase.css">
+    <title>manage sale</title>
+</head>
+
+<body>
+    <!-- === TOP MENU ITEMS === -->
+    <div class="sh-top-menu-items">
+        <ul>
+            <li class="sh-menu-items"><a href="add-requisition.html">Add Requisition</a></li>
+            <li class="sh-menu-items"><a href="manage-requisition.html">Manage Requisition</a></li>
+            <li class="sh-menu-items"><a href="add-purchase.html">Add Purchase</a></li>
+            <li class="sh-active-item"><a href="manage-purchase.html">Manage Purchase</a></li>
+            <li class="sh-menu-items"><a href="manage-received.html">Manage Received</a></li>
+            <li class="sh-menu-items"><a href="manage-payment.html">Manage Payment</a></li>
+        </ul>
+    </div>
+    <!-- === COUNTER SECTION === -->
+    <div class="counter-section">
+        <!-- === TOTAL SALE SECTION === -->
+        <div class="total-sale-section">
+            <!-- === HOME ICON === -->
+            <i class="fa-solid fa-house"></i>
+            <!-- === SALE TEXT === -->
+            <div class="sale-text">
+                <p>TOTAL PRODUCT SALE</p>
+                <H1>0 BDT</H1>
+            </div>
+        </div>
+        <!-- === TOTAL PAID SECTION === -->
+        <div class="total-paid-section">
+            <!-- === HOME ICON === -->
+            <i class="fa-solid fa-check"></i>
+            <!-- === SALE TEXT === -->
+            <div class="sale-text">
+                <p>TOTAL PAID</p>
+                <H1>0 BDT</H1>
+            </div>
+        </div>
+        <!-- === TOTAL DUE SECTION === -->
+        <div class="total-due-section">
+            <!-- === HOME ICON === -->
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <!-- === SALE TEXT === -->
+            <div class="sale-text">
+                <p>TOTAL DUE</p>
+                <H1>0 BDT</H1>
+            </div>
+        </div>
+    </div>
+    <!-- === COUNTER SECTION END === -->
+
+    <!-- === MANAGE SECTION === -->
+    <div class="manage-section">
+        <!-- === MANAGE CONTAINER === -->
+        <div class="manage-container">
+            <p>Manage Purchase</p>
+            <!-- === FILTER AND ADD SECTION === -->
+            <div class="filter-add-new">
+                <div class="filter-container">
+                    <i class="fa-solid fa-filter"></i>
+                    <a href="#">Filter</a>
+                </div>
+                <div class="add-new-sale-container">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <a href="pos-sale.html">New Sale</a>
+                </div>
+            </div>
+        </div>
+        <!-- === LINE === -->
+        <hr>
+        <!-- === FILTER CONTAINER ITEMS === -->
+        <div class="filter-container-items">
+            <!-- === SALE DATE INPUT BOX === -->
+            <div class="sale-date-input-box">
+                <input type="text" placeholder="Search Purchase No" name="" id="">
+            </div>
+            <!-- === SALE DATE INPUT BOX === -->
+            <div class="sale-date-input-box">
+                <input type="text" placeholder="Search Supplier" name="" id="">
+            </div>
+            <!-- === SALE DATE INPUT BOX === -->
+            <div class="sale-date-input-box">
+                <input type="text" placeholder="2/16/2025-02/16/2025" name="" id="">
+            </div>
+            <!-- === FIND BUTTON === -->
+            <div class="sh-button-container">
+                <div class="sh-find-button">
+                    <a href="#">Find</a>
+                </div>
+                <div class="sh-reset-button">
+                    <a href="#">Reset</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- === SHOW AND SEARCH SECTION === -->
+        <div class="show-and-search-section">
+            <!-- === SHOW CONTAINER === -->
+            <div class="show-container">
+                <p>Show</p>
+                <select name="" id="">
+                    <option value="">10</option>
+                    <option value="">20</option>
+                    <option value="">30</option>
+                </select>
+                <p>Entries</p>
+            </div>
+            <!-- === SEARCH CONTAINER === -->
+            <div class="search-container">
+                <label for="text">Search:</label>
+                <input type="search">
+            </div>
+        </div>
+        <!-- === MANAGE SALE DETAILS SECTION === -->
+        <div class="manage-sale-details-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SL</th>
+                        <th>Chanal No</th>
+                        <th>Purchase No</th>
+                        <th>Supplier Name</th>
+                        <th>Purchase Date</th>
+                        <th>Requisition Date</th>
+                        <th>Total Amount (BDT)</th>
+                        <th>Paid Amount (BDT)</th>
+                        <th>Due Amount (BDT)</th>
+                        <th>Payment Status</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+            </table>
+            <!-- === EMPTY SECTION === -->
+            <div class="empty-section">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>No data available in table</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- === SLIDE PAGES === -->
+        <div class="sh-slider-pages">
+            <p>Showing 0 to 0 of 0 entries</p>
+            <div class="sh-slide-right-item">
+                <a href="#">Previous</a>
+                <p>0</p>
+                <a href="#">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- === FONT AWSOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
